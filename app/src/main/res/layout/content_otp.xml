@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:orientation="horizontal"
+    android:layout_marginEnd="20dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.poovam.pinedittextfield.LinePinField
+        android:id="@+id/lineField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:cursorVisible="false"
+        android:textSize="24sp"
+        app:bottomTextPaddingDp="15dp"
+        app:distanceInBetween="20dp"
+        android:textColor="@color/warm_grey"
+        app:fieldColor="@color/warm_grey"
+        app:highlightType="allFields"
+        app:highlightColor="@color/warm_grey"
+        app:isCursorEnabled="false"
+        app:lineThickness="1dp"
+        app:noOfFields="4" />
+
+</LinearLayout>

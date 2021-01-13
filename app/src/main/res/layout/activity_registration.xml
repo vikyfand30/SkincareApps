@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistrationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackRegist"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Registration"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackRegist"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_login_register">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etRegistUsername"-->
+<!--                    android:textColor="@color/greyish_brown"-->
+<!--                    android:textColorHint="@color/warm_grey"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Username"-->
+<!--                    android:fontFamily="@font/opensans_semibold"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:inputType="text" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etRegistFullname"-->
+<!--                    android:textColor="@color/greyish_brown"-->
+<!--                    android:textColorHint="@color/warm_grey"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Fullname"-->
+<!--                    android:fontFamily="@font/opensans_semibold"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:inputType="text" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etRegistAddress"-->
+<!--                    android:textColor="@color/greyish_brown"-->
+<!--                    android:textColorHint="@color/warm_grey"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Address"-->
+<!--                    android:fontFamily="@font/opensans_semibold"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:inputType="text" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegistEmail"
+                    android:textColor="@color/greyish_brown"
+                    android:textColorHint="@color/warm_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etRegistPhone"-->
+<!--                    android:textColor="@color/greyish_brown"-->
+<!--                    android:textColorHint="@color/warm_grey"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Phone Number"-->
+<!--                    android:fontFamily="@font/opensans_semibold"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:inputType="phone" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegistPassword"
+                    android:textColor="@color/greyish_brown"
+                    android:textColorHint="@color/warm_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="14sp"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegistConfirmPassword"
+                    android:textColor="@color/greyish_brown"
+                    android:textColorHint="@color/warm_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="14sp"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etRegistRefferal"
+                    android:textColor="@color/greyish_brown"
+                    android:textColorHint="@color/warm_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reseller ID (optional)"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textSize="14sp"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:text="SIGN UP"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_selector_selected"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

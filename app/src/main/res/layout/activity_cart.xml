@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackCart"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CART"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackCart"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rvProductCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rvProductCart"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_toLeftOf="@id/tvTotalProductCart"
+            android:layout_width="wrap_content"
+            android:text="Total"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/warm_grey"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTotalProductCart"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="Rp 888.000"
+            android:textColor="@color/tangerine"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_bold"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCartCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:fontFamily="@font/opensans_bold"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_button_tangerine"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>

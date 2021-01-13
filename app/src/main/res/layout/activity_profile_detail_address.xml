@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackProfileDetailAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Shipping Address"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackProfileDetailAddress"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_above="@id/llBot"
+        android:id="@+id/svAddres"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_width="wrap_content"
+                android:text="Nama Penerima"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressNamaPenerima"
+                android:hint=""
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Nomor Telp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressNomorTelp"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Provinsi"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressProvinsi"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Kota / Kabupaten"
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressKota"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Kecamatan"
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressKecamatan"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Kode Pos"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressKodePos"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="Alamat Lengkap"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvProfileDetailAddressAlamatLengkap"
+                android:hint=""
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/greyish_brown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+<LinearLayout
+    android:id="@+id/llBot"
+    android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_margin="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnEditDetailAdddress"
+        android:layout_width="0dp"
+        android:textColor="@color/brownish_orange"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Edit"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button_hollow_orange"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnDeleteDetailAddress"
+        android:background="@drawable/rounded_popup_red"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/white"
+        android:text="Delete"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+</RelativeLayout>

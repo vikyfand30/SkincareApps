@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBestSellerItems"
+        android:layout_width="143dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBestSeller"
+        android:layout_gravity="center"
+        android:src="@drawable/img_best_seller_01"
+        android:layout_width="143dp"
+        android:layout_height="160dp"/>
+
+            <TextView
+                android:id="@+id/tvDesBestSeller"
+                android:layout_marginTop="20dp"
+                android:textSize="11sp"
+                android:layout_gravity="left"
+                android:text="Content"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tvPriceBestSeller"
+                android:layout_gravity="left"
+                android:text="rP. 20.000"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

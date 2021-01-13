@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackCheckout"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Checkout"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackCheckout"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_above="@id/btnCheckoutNext"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:id="@+id/llFormAddress"
+             android:layout_margin="20dp"
+             android:orientation="vertical"
+             android:background="@drawable/rounded_form"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="ALAMAT PENGIRIMAN"
+                        android:textSize="11sp"
+                        android:textColor="@color/greyish_brown"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:layout_height="wrap_content"/>
+
+             <LinearLayout
+                 android:layout_marginBottom="20dp"
+                 android:id="@+id/llAlamatPengiriman"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:layout_height="wrap_content">
+             <RadioGroup
+                 android:id="@+id/rgCheckoutAddress"
+                 android:layout_marginLeft="20dp"
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal"
+                 android:layout_height="wrap_content">
+
+                 <RadioButton
+                     android:id="@+id/rbRumah"
+                     android:text="Rumah"
+                     android:buttonTint="@color/golden"
+                     android:textColor="@color/warm_grey"
+                     android:paddingRight="10dp"
+                     android:background="@drawable/rounded_btn_grey"
+                     android:layout_width="wrap_content"
+                     android:outlineSpotShadowColor="@color/golden"
+                     android:layout_height="wrap_content"/>
+
+                 <RadioButton
+                     android:id="@+id/rbKantor"
+                     android:layout_marginLeft="20dp"
+                     android:background="@drawable/rounded_btn_grey"
+                     android:buttonTint="@color/golden"
+                     android:textColor="@color/warm_grey"
+                     android:paddingRight="10dp"
+                     android:text="Kantor"
+                     android:outlineSpotShadowColor="@color/golden"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+
+             </RadioGroup>
+
+             <TextView
+                 android:text="Kota Administrasi Jakarta Pusat"
+                 android:layout_margin="20dp"
+                 android:id="@+id/tvItemAlamatPengiriman"
+                 android:textSize="12sp"
+                 android:textColor="@color/greyish_brown"
+                 android:fontFamily="@font/opensans_semibold"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1dp"
+                     android:background="@color/warm_grey"/>
+
+                 <TextView
+                     android:id="@+id/tvCheckoutNama"
+                     android:layout_marginTop="20dp"
+                     android:text="Arum Tyas Putri"
+                     android:layout_marginLeft="20dp"
+                     android:fontFamily="@font/opensans_semibold"
+                     android:layout_width="wrap_content"
+                     android:textSize="12sp"
+                     android:textColor="@color/greyish_brown"
+                     android:lineHeight="18sp"
+                     android:layout_height="wrap_content"/>
+
+                 <TextView
+                     android:id="@+id/tvCheckoutPhone"
+                     android:textColor="@color/greyish_brown"
+                     android:textSize="12sp"
+                     android:layout_marginTop="5dp"
+                     android:text="081281212"
+                     android:fontFamily="@font/opensans_semibold"
+                     android:layout_marginLeft="20dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+             </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnCheckoutAddAddress"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingLeft="20dp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_btn_brownish_orange"
+                        android:layout_marginBottom="28dp"
+                        android:text="Enter Address"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llFormKurir"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/llFormAddress"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_form"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/img_jne"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_gravity="center_vertical"
+                android:text="JNE"/>
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rgCourierList"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvCheckoutShippingCost"
+                    android:text=" Rp 18.000"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/greyish_brown"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/llFormKurir"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_form"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Total Harga"
+                    android:textSize="12sp"
+                    android:textColor="@color/greyish_brown"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCheckoutTotalPrice"
+                    android:layout_alignParentRight="true"
+                    android:text="Rp 888.000 "
+                    android:textColor="@color/greyish_brown"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/warm_grey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Ongkos Kirim"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/greyish_brown"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvCheckoutInvoiceShippingCost"
+                        android:text="Rp 18.000"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/greyish_brown"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            <View
+                android:background="@color/warm_grey"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCheckoutGrandTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 888.000 "
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/tangerine"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bayar"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/warm_grey"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@id/tvCheckoutGrandTotal"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnCheckoutNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="NEXT"
+        android:layout_alignParentBottom="true"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

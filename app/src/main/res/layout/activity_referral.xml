@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.View.ReferralActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackReferral"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Referral"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackReferral"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+  <RelativeLayout
+      android:layout_below="@id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <ImageView
+          android:id="@+id/ivDiscountReferral"
+          android:layout_width="wrap_content"
+          android:src="@drawable/img_ref_discount"
+          android:layout_marginTop="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_height="wrap_content"/>
+
+      <LinearLayout
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/ivDiscountReferral"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:textColor="@color/greyish_brown"
+              android:textSize="12sp"
+              android:fontFamily="@font/opensans_semibold"
+              android:textAlignment="center"
+              android:layout_width="match_parent"
+              android:text="Your Referral Code"
+              android:layout_height="wrap_content"/>
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/tvReferral"
+              android:drawablePadding="20dp"
+              android:layout_width="wrap_content"
+              android:text="R45BF535"
+              android:layout_centerHorizontal="true"
+              android:textSize="18sp"
+              android:paddingRight="10dp"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:background="@drawable/button_selector_selected"
+              android:textColor="@color/greyish_brown"
+              android:fontFamily="@font/opensans_semibold"
+              android:layout_height="wrap_content"/>
+
+              <ImageView
+
+                  android:id="@+id/ivCopyReferral"
+                  android:layout_width="wrap_content"
+                  android:src="@drawable/ic_copy"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="20dp"
+                  android:layout_toRightOf="@+id/tvReferral"
+                  android:layout_height="wrap_content"/>
+          </RelativeLayout>
+
+
+          <TextView
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:fontFamily="@font/opensans_regular"
+              android:textSize="12sp"
+              android:textColor="@color/greyish_brown"
+              android:textAlignment="center"
+              android:text="Ajak teman kamu untuk bergabung dan registrasi menggunakan kode referral kamu dan dapatkan diskon 10% pembelian voucher chat dengan dokter kami."
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+          <Button
+              android:id="@+id/btnShareReferral"
+              android:layout_width="match_parent"
+            android:layout_margin="20dp"
+              android:text="SHARE"
+              android:textColor="@color/white"
+              android:textSize="14sp"
+              android:fontFamily="@font/opensans_semibold"
+              android:background="@drawable/rounded_btn_brownish_orange"
+              android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+
+
+  </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

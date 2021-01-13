@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:id="@+id/rlName"
+       android:layout_width="match_parent"
+       android:background="@color/white"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+          android:id="@+id/ivProfile"
+          android:layout_width="50dp"
+          android:layout_centerVertical="true"
+          android:layout_margin="20dp"
+          android:layout_alignParentLeft="true"
+          android:src="@drawable/ic_sized_ava"
+          android:layout_height="50dp"/>
+
+      <LinearLayout
+          android:layout_toRightOf="@+id/ivProfile"
+          android:layout_width="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginTop="20dp"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/tvProfileName"
+             android:textStyle="bold"
+             android:text="Arum Tyas Putri"
+             android:textSize="14sp"
+             android:textColor="@color/greyish_brown"
+             android:fontFamily="@font/opensans_semibold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+         <TextView
+             android:id="@+id/tvProfilePhoneNumber"
+             android:text="+62 8122 4343 2342"
+             android:layout_width="wrap_content"
+             android:textSize="12sp"
+             android:fontFamily="@font/opensans_semibold"
+             android:textColor="@color/greyish_brown"
+             android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+
+   </RelativeLayout>
+
+
+   <LinearLayout
+       android:id="@+id/llAddress"
+       android:layout_marginTop="20dp"
+       android:background="@color/white"
+       android:layout_below="@id/rlName"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:id="@+id/llAddressDetail"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+         android:text="Shipping Address"
+          android:layout_margin="20dp"
+          android:fontFamily="@font/opensans_semibold"
+          android:textSize="12sp"
+          android:textColor="@color/warm_grey"
+          android:layout_height="wrap_content"/>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rvShippingAddress"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btnChangeAddress"
+          android:layout_width="wrap_content"
+          android:layout_margin="20dp"
+          android:text="Add More Address"
+          android:textColor="@color/white"
+          android:padding="10dp"
+          android:fontFamily="@font/opensans_semibold"
+          android:textSize="12sp"
+          android:background="@drawable/rounded_btn_brownish_orange"
+          android:textAllCaps="false"
+          android:layout_height="40dp"/>
+
+   </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/rvProfileList"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_below="@id/llAddress"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

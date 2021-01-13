@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ResellerIDActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivBackResellerID"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_24_back"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Reseller ID"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/greyish_brown"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ivBackResellerID"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivResellerID"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_resel_id"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/ivResellerID"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Reseller ID"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/greyish"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/etIDReseller"
+                    android:layout_width="match_parent"
+                    android:hint="Masukkan ID Reseller"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/warm_grey"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnSaveResellerID"
+                    android:layout_width="match_parent"
+                    android:text="SAVE"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_selector_selected"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

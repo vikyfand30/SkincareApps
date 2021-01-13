@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/llAddressDetail"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/address_list"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNameAddress"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/greyish_brown"
+            android:layout_width="wrap_content"
+            android:text="Arum Tyas Putri"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvPhoneAddress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/greyish_brown"
+            android:layout_width="wrap_content"
+            android:text="+62 8122 4343 2342"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLocationAddress"
+                android:layout_width="wrap_content"
+                android:textColor="@color/greyish_brown"
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Rumah"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:id="@+id/btnEditProfileAddress"
+                android:layout_gravity="center"
+                android:layout_width="38dp"
+                android:text="EDIT"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:background="@drawable/button_hollow_grey"
+                android:textColor="@color/warm_grey"
+                android:layout_height="17dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvProfileAddress"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/greyish_brown"
+            android:layout_width="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Jalan Professor Doktor Satrio Blok C4 No.5 RT.7/RW.2, RT.7/RW.2, Kuningan, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

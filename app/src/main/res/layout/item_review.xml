@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvReviews"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivReview"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_sized_ava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@id/ivReview"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvReviewDesc"
+                    android:textSize="13sp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/greyish_brown"
+                    android:layout_marginTop="20dp"
+                    android:text="JEFA Skincare packages all their products in recyclable materials and…offer a unique, high quality brand that we feel a perfect match for the excellence of The Royal Ballet.’
+The Royal Ballet, London"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvReviewName"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/greyish_brown"
+                    android:text="Puji Astuti, Distributor Riau."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvReviewDate"
+                    android:textSize="11sp"
+                    android:text="June, 2019"
+                    android:textColor="@color/greyish_brown"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

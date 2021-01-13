@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileDetailEditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivBackDataDiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_24_px_back"
+                    android:tint="@color/greyish_brown" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ivBackDataDiri"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Data Diri"
+                    android:textColor="@color/greyish_brown"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/img_banner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:id="@+id/ivAvaDataDiri"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_sized_ava"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/llDataDiri"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/ivAvaDataDiri"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nama Penerima"
+                android:textColor="@color/warm_grey"
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvNamaPenerimaDataDiri"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="Tanggal Lahir"
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvDateDataDiri"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvJenisKelaminDataDiri"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:text="Email"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvEmailDataDiri"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_width="wrap_content"
+                android:text="Nomor Telepon"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvPhoneDataDiri"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_below="@id/llDataDiri"
+            android:id="@+id/btnUbahDataDiri"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_btn_brownish_orange"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:text="UBAH DATA DIRI"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.transfer.bank.TransferBankDetailTranscationActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackTransferBankDetail"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Detail Transaction"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackTransferBankDetail"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvWaitingPayment"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Waiting for Confirmation"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/view_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textColor="@color/warm_grey"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:text="Order ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="34561234"
+                            android:textSize="12sp"
+                            android:textColor="@color/greyish_brown"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/warm_grey"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:text="Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="28 Sept 2019"
+                            android:textSize="12sp"
+                            android:textColor="@color/greyish_brown"
+                            android:fontFamily="@font/opensans_semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBankTransfer"
+            android:layout_below="@+id/cvWaitingPayment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivGopayDetailTranscation"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/img_gopay"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="GOPAY Transfer"
+                        android:fontFamily="@font/opensans_bold"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivGopayDetailTranscation"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_color_black"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_24_arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <View
+                    android:background="@color/view_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivJNE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_jne"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/ivJNE"
+                        android:text="JNE REGULER"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textColor="@color/greyish_brown"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Rp 18.000"
+                        android:textColor="@color/greyish_brown"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textSize="11sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvTujuanPengiriman"
+            android:layout_width="wrap_content"
+            android:text="Tujuan Pengiriman"
+            android:textSize="12sp"
+            android:fontFamily="@font/opensans_semibold"
+            android:textColor="@color/warm_grey"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/cvBankTransfer"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/rlKota"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tvTujuanPengiriman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/greyish_brown"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Kota Administrasi Jakarta Pusat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_arrow_right"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/rlKota"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/view_color"/>
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ba9924</color>
+    <color name="text_color_black">#404040</color>
+    <color name="golden">#ba9924</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="wheat">#F5DEB3</color>
+    <color name="sandy_brown">#F4A460</color>
+    <color name="white">#FFFFFF</color>
+    <color name="peach_puff">#FFDAB9</color>
+    <color name="light_peach">#ffd1ce</color>
+    <color name="pale_salmon">#ffb0ab</color>
+    <color name="bubble_gum_pink">#fa91eb</color>
+    <color name="pastel_purple">#bea8fe</color>
+    <color name="grey">#f8f8f8</color>
+    <color name="tangerine">#ff951c</color>
+    <color name="white_two">#ebebeb</color>
+    <color name="greyish_brown">#404040</color>
+    <color name="greyish">#b6b6b6</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="brownish_orange">#ba9924</color>
+    <color name="white_four">#e5e5e5</color>
+    <color name="warm_grey">#909090</color>
+    <color name="salmon_pink">#ff667d</color>
+    <color name="warm_grey_two">#727272</color>
+    <color name="view_color">#f8f8f8</color>
+    <color name="background">#dddddd</color>
+    <color name="red">#FF0000</color>
+    <color name="bluish_green">#0e9d56</color>
+    <color name="black_54">#8a000000</color>
+    <color name="virdian">#1e9c5a</color>
+</resources>

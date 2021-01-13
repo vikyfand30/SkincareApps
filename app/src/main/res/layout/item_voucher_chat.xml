@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_marginLeft="60dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginRight="60dp"
+    android:id="@+id/cvVoucher"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/ic_chat"
+            android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Voucher Chat"
+        android:textSize="12sp"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/brownish_orange"
+        android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textColor="@color/salmon_pink"
+            android:id="@+id/tvVoucherPrice"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="29sp"
+            android:layout_width="wrap_content"
+            android:text="RP 20.000"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvVoucherKet"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Untuk 5x Sesi Pertanyaan"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

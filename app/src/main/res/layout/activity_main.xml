@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/img_jefa_main_logo"
+                android:layout_height="wrap_content"/>
+
+            <ru.nikartm.support.ImageBadgeView
+                android:id="@+id/ivHomeCart"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_24_shop_active"
+                app:ibv_badgeBackground="@drawable/badge_rounded_red"
+                app:ibv_badgeColor="#00ACC1"
+                app:ibv_badgeLimitValue="false"
+                app:ibv_badgePosition="top_right"
+                app:ibv_badgeTextColor="#ffffff"
+                app:ibv_badgeTextSize="12sp"
+                android:layout_marginTop="5dp"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeValue="0"
+                app:ibv_fixedBadgeRadius="10dp"
+                app:ibv_visibleBadge="false" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivHomeCart"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:src="@drawable/ic_24_shop_active"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view">
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

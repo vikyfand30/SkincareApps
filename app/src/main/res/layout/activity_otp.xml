@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.OtpActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackOtp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Reset Password"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackOtp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/img_login_register">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvOtp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/greyish_brown"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Enter 4 digit number we already
+sent to your email."/>
+
+
+        <include layout="@layout/content_otp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/contentOTP"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvOtp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btnSubmitOtp"
+            android:textSize="14sp"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_selector_selected"
+            android:layout_below="@+id/contentOTP"
+            android:layout_width="match_parent"
+            android:text="SUBMIT"
+
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/llTwo"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnSubmitOtp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/warm_grey"
+            android:fontFamily="@font/opensans_regular"
+            android:text="4 digit number will expired in "
+           />
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/countdownView"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:timeTextSize="12sp"
+                app:timeTextColor="@color/warm_grey"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTittleResend"
+            android:visibility="invisible"
+            android:layout_below="@+id/llTwo"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="didnt receive 4 digit number?"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvResend"
+            android:layout_below="@id/tvTittleResend"
+            android:layout_centerHorizontal="true"
+            android:text="RESEND"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:textSize="12sp"
+            android:textColor="@color/greyish_brown"
+            android:fontFamily="@font/opensans_semibold"
+            android:lineHeight="21sp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

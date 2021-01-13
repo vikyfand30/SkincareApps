@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.transfer.bank.TransferBankPendingActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBackTransferBankPending"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_24_back"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Payment"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ivBackTransferBankPending"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBankTransfer"
+            android:layout_width="wrap_content"
+            android:text="Bank Transfer"
+            android:textSize="14sp"
+            android:textColor="@color/greyish_brown"
+            android:lineHeight="16sp"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/llPayment"
+            android:layout_below="@id/tvBankTransfer"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="@color/greyish_brown"
+                android:text="Kepada customer terhormat, segera lakukan pembayaran."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/opensans_semibold"
+                android:textSize="12sp"
+                android:textColor="@color/greyish_brown"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:text="Pesanan anda akan dibatalkan secara otomatis tanpa pemberitahuan, jika tidak melakukan pembayaran dalam 24 jam."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/llPayment">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivBank1"
+                        android:src="@drawable/img_bca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivBank1"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/opensans_semibold"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="14sp"
+                            android:text="BCA 6124349579"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:fontFamily="@font/opensans_semibold"
+                            android:textColor="@color/warm_grey"
+                            android:textSize="12sp"
+                           android:text="a.n Jefa Skincare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_copy"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/view_color"/>
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivBank2"
+                        android:src="@drawable/img_bni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ivBank2"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/opensans_semibold"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="14sp"
+                            android:text="BNI 02124349579"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:fontFamily="@font/opensans_semibold"
+                            android:textColor="@color/warm_grey"
+                            android:textSize="12sp"
+                            android:text="atas nama Jefa Skincare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_copy"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/view_color"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Jumlah yang harus dibayar"
+                    android:textSize="12sp"
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/warm_grey"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 906.212"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Confirm your Payment"
+        android:background="@drawable/rounded_button_tangerine"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

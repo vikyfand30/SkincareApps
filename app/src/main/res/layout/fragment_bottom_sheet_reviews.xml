@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BottomSheetReviewsFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="JEFA Skincare packages all their products in recyclable materials and…offer a unique, high quality brand that we feel a perfect match for the excellence of The Royal Ballet." />
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivAva"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_sized_ava"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/ivAva"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/greyish_brown"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Puji Astuti, Distributor Riau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="June, 2019"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/greyish_brown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/ivCloseReview"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_32_close_grey"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

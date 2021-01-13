@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/incorrect_email_pass"
+        android:textColor="@color/salmon_pink"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="12sp"
+        android:id="@+id/tvDialogLogin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/greyish_brown"
+            android:fontFamily="@font/opensans_semibold"
+            android:layout_marginTop="50dp"
+            android:hint="Email"
+            android:textColorHint="@color/warm_grey"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:textColor="@color/greyish_brown"
+            android:textColorHint="@color/warm_grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:fontFamily="@font/opensans_semibold"
+            android:textSize="14sp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_primary_bg"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_width="4dp" />
+<!--    <Button-->
+<!--        android:id="@+id/btnLogin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/button_selector_selected"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:fontFamily="@font/opensans_semibold"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="@color/white" />-->
+
+</LinearLayout>

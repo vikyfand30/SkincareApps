@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Jefa Skin Care</string>
+    <string name="title_shop">Shop</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="title_feeds">Gallery</string>
+    <string name="title_chat">Konsultasi</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="province">Pilih Provinsi</string>
+    <string name="city">Pilih Kabupaten / Kota</string>
+    <string name="district">Pilih Kecamatan</string>
+    <string name="kodepos">Pilih Kode Pos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="incorrect_email_pass"><![CDATA[You entered incorrect email & password]]></string>
+</resources>
